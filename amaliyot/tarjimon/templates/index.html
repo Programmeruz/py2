@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Django</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+  </head>
+  <body>
+    <!--Ushbu dasturda siz rangni kiritasiz va matn shu ranga kiradi-->
+    <div class="text">
+      <p class="{{rang}}">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <form class="inp" action="/" method="GET">
+      Matnni rangini kiriting: <input type="text" name="rang" value="" class="in" placeholder="Istalgan rangni kiriting...">
+    </form>
+    <!--Ushbu dasturda siz biron soz kiritasiz va u sizga shu sozga tog'ri keladigan rasmni chiqaribberadi-->
+    <form class="put" action="/" method="GET">
+      <input class="txt" type="text" name="xab" placeholder="Sozni kiriting...">
+    </form>
+    <div class="{{mes}}">
+      <h1>salom</h1>
+    </div>
+    <div class="imgs">
+      <!--<img src="{% static 'table.png' %}" alt="">
+      <img src="{% static 'logo.png' %}" alt="">
+      <img src="{% static 'comp.png' %}" alt="" class="im">
+      <img src="{% static 'apl.png' %}" alt="">-->
+    </div>
+    <!--Ushbu dasturda onlayn mashina dokonidan mashina sotib olish uchun turli mashina hususiyatlarini kiritish mumkin-->
+    <!--<form method="GET" action="/" class="list">
+      <div class="model">
+        <h1>Mashina modelini kiriting</h1>
+        <input type="button" name="model" value="Malibu" class="button">
+        <input type="button" name="model" value="Spark" class="button">
+        <input type="button" name="model" value="Cobalt" class="button">
+        <input type="button" name="model" value="Gentra" class="button">
+        <input type="button" name="model" value="Nexia" class="button">
+      </div>
+    </form>-->
+  </body>
+</html>
